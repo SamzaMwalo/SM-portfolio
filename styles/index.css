@@ -1,0 +1,193 @@
+/* comment */
+
+/*
+-SELECTORS: target a particular html element. Types of selectors::after
+ -class ()
+ -id(name of ID)
+ -html(tag name)
+-STRUCTURE
+ -selector
+ -declaration
+ -curly brackets{}
+ */
+
+/* CSS variables*/
+:root {
+  --primary-color: #ce5a9b;
+  --secondary-color: #ac7b84;
+  --auxiliary-color: #fff;
+  --padding-horizontal: 100px;
+  --card-background-color: #ffeff2;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  background-color: var(--primary-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: var(--padding-horizontal);
+  padding-right: var(--padding-horizontal);
+  display: flex; /*arranges elements in a single row*/
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > div > a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+nav > div > h1 {
+  color: #fff;
+  margin: 5px;
+}
+
+.logo {
+  display: flex;
+}
+
+nav > div > a:hover {
+  background-color: white;
+  color: #ce5a9b;
+  border-radius: 5px;
+}
+
+section > div {
+  margin: 30px;
+}
+
+section > div > p {
+  text-align: justify;
+}
+
+#homesection {
+  display: flex;
+  padding-left: var(--padding-horizontal);
+  padding-right: var(--padding-horizontal);
+  height: 80vh;
+  align-items: center;
+}
+
+#homesection > img {
+  aspect-ratio: 1/1; /*Enables uniformity as it scales*/
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+#homesection > div {
+  padding: 20px;
+  width: 50vw;
+}
+
+#homesection > div > h1 {
+  font-size: 40;
+  margin: 0;
+  color: var(--primary-color);
+}
+
+#homesection > div > p {
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0;
+  padding-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+#projectsection{
+  background-color: rgba(9, 246, 246, 0.954);
+}
+
+#homesection>div>button{
+  all: unset;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 8px 24px 8px 24px;
+  border-radius: 50px;
+  transition: 2s;
+}
+
+#homesection>div>button:hover{
+  background-color: rgb(170, 59, 59);
+  color: rgb(94, 212, 137);
+  cursor: pointer;
+}
+
+#projectsection>div>h1{
+  color: var(--primary-color);
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+}
+
+#projectsection>div>p{
+  color: var(--secondary-color);
+  font-weight: 300px;
+  text-align: center;
+  margin: 0;
+}
+
+#projectsection>.projects{
+  display: flex;
+}
+
+#projectsection>.projects>.card{
+  background-color: var(--card-background-color);
+  width: 311px;
+  height: 344px;
+  border-radius: 30px;
+  padding: 16px;
+  margin: 12px;
+}
+
+#projectsection>.projects>.card>button{
+  all: unset;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 8px 24px 8px 24px;
+  border-radius: 50px;
+  transition: 2s;
+  width: 80%;
+  text-align: center;
+}
+
+#projectsection>.projects>.card>button:hover{
+  background-color: rgb(170, 59, 59);
+  color: rgb(94, 212, 137);
+  cursor: pointer;
+}
+
+#projectsection>.projects>.card>img{
+  width: 280px;
+  height: 150px;
+  aspect-ratio: 1/1;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+#projectsection>.projects>.card{
+  color: var(--secondary-color);
+  font-weight: 12px;
+  padding: 16px;
+  margin: 12px;
+}
+
+#projectsection>div>.card>h3{
+  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+}
+
+#projectsection>div>.card>p{
+  color: var(--secondary-color);
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+
