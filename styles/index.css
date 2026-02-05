@@ -100,11 +100,11 @@ section > div > p {
   color: var(--secondary-color);
 }
 
-#projectsection{
+#projectsection {
   background-color: rgba(9, 246, 246, 0.954);
 }
 
-#homesection>div>button{
+#homesection > div > button {
   all: unset;
   background-color: var(--primary-color);
   color: #fff;
@@ -113,31 +113,31 @@ section > div > p {
   transition: 2s;
 }
 
-#homesection>div>button:hover{
+#homesection > div > button:hover {
   background-color: rgb(170, 59, 59);
   color: rgb(94, 212, 137);
   cursor: pointer;
 }
 
-#projectsection>div>h1{
+#projectsection > div > h1 {
   color: var(--primary-color);
   font-size: 40px;
   text-align: center;
   margin: 0;
 }
 
-#projectsection>div>p{
+#projectsection > div > p {
   color: var(--secondary-color);
   font-weight: 300px;
   text-align: center;
   margin: 0;
 }
 
-#projectsection>.projects{
+#projectsection > .projects {
   display: flex;
 }
 
-#projectsection>.projects>.card{
+#projectsection > .projects > .card {
   background-color: var(--card-background-color);
   width: 311px;
   height: 344px;
@@ -146,7 +146,7 @@ section > div > p {
   margin: 12px;
 }
 
-#projectsection>.projects>.card>button{
+#projectsection > .projects > .card > button {
   all: unset;
   background-color: var(--primary-color);
   color: #fff;
@@ -157,13 +157,13 @@ section > div > p {
   text-align: center;
 }
 
-#projectsection>.projects>.card>button:hover{
+#projectsection > .projects > .card > button:hover {
   background-color: rgb(170, 59, 59);
   color: rgb(94, 212, 137);
   cursor: pointer;
 }
 
-#projectsection>.projects>.card>img{
+#projectsection > .projects > .card > img {
   width: 280px;
   height: 150px;
   aspect-ratio: 1/1;
@@ -171,23 +171,109 @@ section > div > p {
   object-fit: cover;
 }
 
-#projectsection>.projects>.card{
+#projectsection > .projects > .card {
   color: var(--secondary-color);
   font-weight: 12px;
   padding: 16px;
   margin: 12px;
 }
 
-#projectsection>div>.card>h3{
+#projectsection > div > .card > h3 {
   font-size: medium;
   font-weight: bold;
   text-align: center;
 }
 
-#projectsection>div>.card>p{
+#projectsection > div > .card > p {
   color: var(--secondary-color);
   font-size: 12px;
   margin-top: 12px;
 }
 
+#contactSection {
+  padding-left: var(--padding-horizontal);
+  padding-right: var(--padding-horizontal);
+  height: 60vh;
+}
 
+#contactSection > form {
+  padding: 24px;
+  background-color: var(--secondary-color);
+  border-radius: 25px;
+  width: 60vw;
+  margin: auto;
+}
+
+#contactSection > form > .userNameEmail,
+.userAgeBirthday {
+  display: flex;
+}
+
+#contactSection > form > h1 {
+  text-align: center;
+  font-size: 34px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+}
+
+#contactSection > form > div > div {
+  margin-top: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+#contactSection>form>.userMessage{
+  margin-top: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+#contactSection > form > .userNameEmail,
+.userAgeBirthday > div > label {
+  font-weight: 500;
+  color: white;
+}
+
+#contactSection > form > .userNameEmail > div > input {
+  all: unset;
+  background-color: #fff;
+  border-radius: 5px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-top: 10px;
+  height: 25px;
+  color: gray;
+  font-size: 15px;
+  width: 20vw;
+}
+
+#contactSection > form > .userAgeBirthday > div > input {
+  all: unset;
+  background-color: #fff;
+  border-radius: 5px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-top: 10px;
+  height: 25px;
+  color: gray;
+  font-size: 15px;
+  width: 20vw;
+}
+
+#contactSection > form > div > textarea {
+  all: unset;
+  background-color: #fff;
+  border-radius: 5px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  color: gray;
+  font-size: 15px;
+  width: 400px;
+}

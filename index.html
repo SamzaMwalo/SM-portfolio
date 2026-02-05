@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--enables responsiveness-->
     <meta
-      name="description" 
+      name="description"
       content="This is a portfolio of Software Engineering projects done by Samwel Mwangi"
     />
     <!--aids in search engine optimisation-->
@@ -118,8 +118,65 @@
         </div>
       </div>
     </section>
-    <!--contact form-->
-    <form action=""></form>
+
+    <!-- contact section -->
+    <section id="contactSection">
+      <!--contact form-->
+      <form action="">
+        <h1>Contact Me</h1>
+        <hr />
+        <br />
+
+        <div class="userNameEmail">
+          <!--user name -->
+
+          <div>
+            <label for="userName">Name:</label><br />
+            <input
+              type="text"
+              name="userName"
+              placeholder="e.g Samwel Mwangi"
+            />
+          </div>
+
+          <!-- user email-->
+          <div>
+            <label for="userEmail">Email:</label><br />
+            <input
+              type="email"
+              id="userEmail"
+              name="userEmail"
+              placeholder="e.g myexample@example.com"
+            />
+          </div>
+        </div>
+
+        <div class="userAgeBirthday">
+          <!-- user age -->
+          <div>
+            <label for="userAge">Age:</label><br />
+            <input type="number" id="userAge" name="userAge" placeholder="0" />
+          </div>
+
+          <!-- user birthday -->
+          <div>
+            <label for="userDOB">Your Birthday:</label><br />
+            <input type="date" id="userDOB" name="userDOB" />
+          </div>
+        </div>
+
+        <!-- -->
+        <div>
+          <label for="userFile">Upload File</label><br />
+          <input type="file" id="userFile" name="userFile" />
+        </div>
+
+        <!-- user message -->
+        <div class="userMessage">
+          <label for="userMessage">Message: </label><br />
+          <textarea name="userMessage" id="userMessage"></textarea>
+        </div>
+      </form>
+    </section>
   </body>
 </html>
-
