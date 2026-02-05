@@ -204,8 +204,7 @@ section > div > p {
   margin: auto;
 }
 
-#contactSection > form > .userNameEmail,
-.userAgeBirthday {
+#contactSection > form > .userNameEmail, .userAgeBirthday {
   display: flex;
 }
 
@@ -229,8 +228,7 @@ section > div > p {
   padding-right: 12px;
 }
 
-#contactSection > form > .userNameEmail,
-.userAgeBirthday > div > label {
+#contactSection > form > .userNameEmail, .userAgeBirthday > div > label {
   font-weight: 500;
   color: white;
 }
@@ -276,4 +274,21 @@ section > div > p {
   color: gray;
   font-size: 15px;
   width: 400px;
+}
+
+#contactSection > form > button {
+  all: unset;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 8px 24px 8px 24px;
+  border-radius: 50px;
+  transition: 2s;
+  width: 80%;
+  text-align: center;
+}
+
+#contactSection > form > button:hover {
+  background-color: rgb(170, 59, 59);
+  color: rgb(94, 212, 137);
+  cursor: pointer;
 }
